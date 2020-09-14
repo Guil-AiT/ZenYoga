@@ -18,12 +18,13 @@
     /*CSS HEX Colors*/
     --main-color: #C77CF1;
     --color-light: #ffffff;
+    --color-light-half: rgba(255, 255, 255, 0.3);
     --color-dark: #000000;
     --color-plan1:#C77CF1;
     --color-plan2:#B268F2;
     --color-plan3:#C153DB;
     --color-plan4:#FE7AEB;
-    --color-ligh-border: #d3d3d3;
+    --color-light-border: #d3d3d3;
     /* --color-gradient: linear-gradient(-50deg,  #C77CF1 0%, #6C63FF 100%); */
     /* linear-gradient(to right,  #6C63FF, #C77CF1); */
     --color-gradient: linear-gradient(to right,  #6C63FF, #C77CF1);
@@ -131,6 +132,10 @@ a{
     box-shadow: 0 10px 20px 0 rgba(00, 00, 00, 0.2);
 }
 
+.header-color{
+    background-color: var(--main-color);
+}
+
 .cover-img{
     /* position: relative; */
     background-image: url(assests/images/headerImg.jpg);
@@ -145,6 +150,13 @@ a{
 .cover-color{
     background-color: rgba(96, 41, 169, 0.3);
     height: 100%;
+}
+
+.innerBtn{
+    position: relative;
+	border: none;
+    background-color:var(--color-light-half);
+    border-radius:100px;
 }
 
 .slogan-container{
@@ -164,7 +176,7 @@ a{
 
 .content{
     background-color: var(--ghost-white);
-    min-height: 100vh;
+    min-height: 50vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -367,7 +379,7 @@ th{
 .table th, .table td{
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid var(--color-ligh-border);
+    border-top: 1px solid var(--color-light-border);
 }
 
 .table thead th{
@@ -376,7 +388,7 @@ th{
 }
 
 .table-bordered th, .table-bordered td{
-    border: 1px solid var(--color-ligh-border);
+    border: 1px solid var(--color-light-border);
 }
 
 .table-bordered thead th, .table-bordered thead td{
@@ -686,4 +698,28 @@ footer h2{
 .footer-bottom .copyright{
     margin-top: 1rem;
     margin-bottom: 0;
+}
+
+.instructors-index{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.index-dot{
+    display: inline-block;
+    border: 2px solid var(--color-light-border);
+    height: 12px;
+    width: 12px;
+    background-color: var(--color-light);
+    border-radius: 50%;
+}
+
+.index-dot:hover{
+    display: inline-block;
+    border: 2px solid var(--color-light-border);
+    height: 12px;
+    width: 12px;
+    background-color: var(--main-color);
+    border-radius: 50%;
 }
