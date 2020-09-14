@@ -144,6 +144,7 @@ a{
 
 .cover-color{
     background-color: rgba(96, 41, 169, 0.3);
+    height: 100%;
 }
 
 .slogan-container{
@@ -153,7 +154,7 @@ a{
     font-size: 3rem;
     text-align: center;
     vertical-align: middle;
-    margin-top: 25rem;
+    margin-top: 18rem;
 }
 
 .spacer{
