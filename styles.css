@@ -100,6 +100,7 @@ a{
     flex-wrap: wrap;
     padding: 5px;
     text-align: end;
+    justify-content: end;
     flex-grow: 1;
 }
 
@@ -591,7 +592,7 @@ th{
 
 .newsletter-bar button{
     position: relative;
-    margin-left: -3rem;
+    margin-left: -6rem;
 	height: 52px;
 	border: none;
     background-color:var(--main-color);
