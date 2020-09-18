@@ -13,12 +13,13 @@
 :root{
     /*Fonts*/
     --font-main: 'Roboto', sans-serif;
-    --font-text: '', ;
-    --font-numbers: '',;
+    --font-text: 'Open Sans', sans-serif;
+    --font-numbers: 'Calibri', sans-serif;
     /*CSS HEX Colors*/
     --main-color: #C77CF1;
     --color-light: #ffffff;
     --color-light-half: rgba(255, 255, 255, 0.3);
+    --color-text-light:#717171;
     --color-dark: #000000;
     --color-plan1:#C77CF1;
     --color-plan2:#B268F2;
@@ -49,6 +50,14 @@ a{
 .a:hover{
     text-decoration: underline;
     transform: scale(1.05);
+}
+
+.h2{
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
 }
 
 .button{
@@ -98,7 +107,7 @@ a{
 .navMenu{
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding-inline: 1rem;
     text-align: end;
     justify-content: end;
     flex-grow: 1;
@@ -106,15 +115,11 @@ a{
 
 .navMenu a{
     display:inline-block;
+    padding: .350rem 1.5rem;
     font-weight:400;
     color: var(--color-light);
     text-align:start;
-    vertical-align:middle;
-    background-color:transparent;
-    border:1px solid transparent;
-    padding: .350rem 1rem;
     font-size:.8rem;
-    line-height:1.5;
 }
 
 .navMenu a:hover{
@@ -125,7 +130,7 @@ a{
 .header a.navBtn{
     background-image: var(--color-gradient);
     border: none;
-    font-size: 14px;
+    font-size: 1rem;
     border-radius: 100px;
 }
 
@@ -147,7 +152,8 @@ a{
     background-position: bottom;
     background-attachment: fixed;
     min-height: 600px;
-    height: calc(100vh);
+    /* height: calc(100vh); */
+    height: 100vh;
 }
 
 .cover-color{
@@ -165,7 +171,7 @@ a{
 .slogan-container{
     font-family: var(--font-main);
     color: var(--color-light);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     text-align: center;
     vertical-align: middle;
@@ -178,7 +184,7 @@ a{
 }
 
 .content{
-    background-color: var(--ghost-white);
+    /* background-color: var(--color-light); */
     min-height: 50vh;
     display: block;
     margin-left: auto;
@@ -209,7 +215,7 @@ a{
     font-family: var(--font-main);
     color: var(--color-dark);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -235,8 +241,8 @@ a{
 .info p{
     max-width: 65%;
     font-family: var(--font-main);
-    color: var(--color-dark);
-    font-weight: 400;
+    color: var(--color-text-light);
+    font-weight: 300;
     font-size: 1rem;
     text-align: start;
     margin-top: 3rem;
@@ -303,12 +309,20 @@ a{
     border-radius: 50%;
 }
 
-.classes-container p{
-    max-width: 80%;
+.classes-container h2{
     font-family: var(--font-main);
-    color: var(--color-dark);
-    font-weight: 400;
     font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.classes-container p{
+    max-width: 90%;
+    font-family: var(--font-main);
+    color: var(--color-text-light);
+    font-weight: 300;
+    font-size: .9rem;
     text-align: center;
 }
 
@@ -323,8 +337,6 @@ a{
     width: 100%;
     text-align: center;
     margin-bottom: 1rem;
-    /* color: #212529; */
-    /* color: blue; */
     border-collapse: collapse;
 }
 
@@ -340,11 +352,11 @@ a{
 }
 
 .table-bordered{
-    /* border: 1px solid red; */
+    border: 1px solid var(--color-light-border);
 }
 
 .text-center{
-    text-align: center !important;
+    text-align: center;
 }
 
 .week-day{
@@ -357,17 +369,26 @@ th{
 }
 
 .table th{
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
     font-weight: 500;
+    padding: 0.7rem;
+    border-top: 1px solid var(--color-light-border);
 }
 
-.table th, .table td{
-    padding: 0.75rem;
-    vertical-align: top;
+.table td{
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    padding: 0.7rem;
     border-top: 1px solid var(--color-light-border);
 }
 
 .table thead th{
-    vertical-align: bottom;
     border-bottom: 2px solid var(--color-light-border);
 }
 
@@ -382,27 +403,13 @@ th{
 .table tbody tr td{
     text-align: center;
     vertical-align: middle;
-    padding: 30px 10px;
-}
-
-.table tbody tr td i{
-    font-size: 20px;
-}
-
-.schedule-img{
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
+    padding: 0.7rem;
+    min-width: 100px;
 }
 
 .table tbody tr td a{
     display: block;
-    color: var(--color-dark);
+    color: var(--color-text-light);
 }
 
 .table tbody tr td a:hover{
@@ -412,7 +419,25 @@ th{
 }
 
 .table tbody tr td i{
-    font-size: 20px;
+    font-size: 1rem;
+}
+
+.table tfoot tr th{
+    border: var(--color-light);
+}
+
+.table tfoot tr th a{
+    cursor: not-allowed;
+}
+
+.schedule-img{
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
 }
 
 .instructors-row{
@@ -441,16 +466,20 @@ th{
 
 .brief p{
     max-width: 85%;
-    font-family: var(--font-main);
-    color: var(--color-dark);
+    font-family: var(--font-text);
+    color: var(--color-text-light);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: start;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .brief h6{
-    margin-bottom: 0;
+    margin: 0;
+    font-family: var(--font-text);
+    font-weight: 300;
+    font-size: .8rem;
+    text-align: start;
 }
 
 .quota{
@@ -506,11 +535,23 @@ th{
     box-shadow: 2px 5px 6px rgba(72, 105, 114, 0.3);
 
     /* flex:0 0 22% ; */
-    max-width: 230px;
+    /* max-width: 230px; */
+    width: 230px;
     padding-bottom: 1.5rem;
 }
 
+.plans-container h3{
+    font-family: var(--font-main);
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
 .plans-container p{
+    font-family: var(--font-text);
+    color: var(--color-text-light);
+    font-weight: 300;
+    font-size: 1rem;
     padding: 1rem;
 }
 
@@ -545,17 +586,16 @@ th{
 }
 
 .dot p{
-    font-family: var(--font-main);
+    font-family: var(--font-numbers);
     color: var(--color-dark);
-    font-weight: 400;
-    font-size: 1.8rem;
+    font-weight: 300;
+    font-size: 1.7rem;
     text-align: center;
 }
 
 .plans-container a.planBtn{
     background-image: var(--color-gradient);
     border: none;
-    font-size: 14px;
     border-radius: 100px;
 }
 
@@ -647,7 +687,7 @@ footer h2{
 .footer ul li i{
     width: 14px;
     height: 14px;
-    padding-right: 1rem;
+    padding-right: .2rem;
 }
 
 .footer a{
@@ -717,6 +757,7 @@ footer h2{
     display: flex;
     justify-content: center;
     gap: 5px;
+    padding: 1rem;
 }
 
 .index-dot{
