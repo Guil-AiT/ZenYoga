@@ -777,3 +777,56 @@ footer h2{
     background-color: var(--main-color);
     border-radius: 50%;
 }
+
+/* Media Queries */
+
+.navbutton {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    color:var(--color-light);
+    background-color: transparent;
+    border: none;
+    /* hides this button in desktop view */
+    display: none;
+}
+
+@media screen and (max-width:913px){
+    .navbutton {
+        display: block;
+    }
+    
+    .navMenu {
+        flex-direction: column;
+        min-width: 80%;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .5s;
+    }
+    .navMenu a {
+        /* border-bottom: solid 1px white; */
+        padding: .7rem 1.5rem;
+        font-weight:400;
+        color: var(--color-light);
+        text-align:center;
+        font-size:1rem;
+    }
+
+    .navMenu a:hover{
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
+
+    .navMenu.open {
+        max-height: 50vh;
+    }
+
+    .header a.navBtn{
+        display: none;
+    }
+
+    .header a.navBtn.open{
+        display: block;
+        flex-grow: 1;
+    }
+}
