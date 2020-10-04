@@ -303,11 +303,38 @@ a{
     width: 230px;
 }
 
+.classes-page-container{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classes-page-container p{
+    font-family: var(--font-main);
+    color: var(--color-text-light);
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
 .classes-row{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+}
+
+.classes-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* max-width: 80%; */
+    gap: 4rem;
 }
 
 .classes-images{
@@ -319,9 +346,45 @@ a{
     border-radius: 50%;
 }
 
-.classes-container h2{
+/*
+.classes-page-img-container {
+    position: relative;
+    width: 500px;     
+    height: 500px;
+    overflow: hidden;
+ }
+
+.classes-page-images {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+.classes-page-images-landscape{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    right: -23%;
+}
+*/
+
+.classes-page-images{
+    max-width: 90vw;
+}
+
+.classes-container h3{
     font-family: var(--font-main);
     font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.classes-page-container h2{
+    font-family: var(--font-main);
+    font-size: 2rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
