@@ -1,3 +1,5 @@
+var slideIndex = 0;
+
 function onLoad() {
   const btn = document.querySelector('.navbutton')
   const nav = document.querySelector('.navMenu')
@@ -13,12 +15,10 @@ function onLoad() {
       a.classList.add('open')
     }
   })
+  showSlides();
 }
   
 window.addEventListener("load", onLoad )
-
-var slideIndex = 0;
-showSlides();
   
 function showSlides() {
   var counter;
