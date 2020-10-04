@@ -918,6 +918,38 @@ footer h2{
     opacity: 50%;
 }
 
+.map-container{
+    max-width: 55%;
+    overflow: hidden;
+    max-height: 50vh;
+}
+
+.contact-box{
+    position: relative;
+    align-self: center;
+    max-width: 48%;
+    min-width: 255px;
+}
+
+.contact-box ul{
+    padding-left: 1rem;
+}
+
+.contact-box ul li{
+    list-style: none;
+    font-size: 1rem;
+    color: var(--color-text-light);
+    padding-bottom: 1rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Media Queries */
 
 .navbutton {
@@ -989,6 +1021,25 @@ footer h2{
         display: block;
         flex-grow: 1;
     }
+
+    .map-container{
+        max-height: 40vh;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .spacer{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .map-container{
+        /* display: none; */
+        /* max-height: 25vh; */
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width:500px){
