@@ -9,11 +9,13 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1m shrink-to-fit=no"> -->
         <link rel="Zen Tab Icon" href="assests/logo/tab-icon.png">
         <!-- Stylesheet -->
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <!-- Main Stylesheet -->
         <link rel="stylesheet" href="styles.css">
-    </head>
+        <!-- Scripts -->
+        <script src="script.js"></script>
+        </head>
     <body>
         <header class="header">
             <div class="header-color">
@@ -22,39 +24,96 @@
                         <a href="index.html"><img src="assests/logo/logo.png" class="logo"></a>
                     </div>
                     <nav class="navMenu">
-                        <a href="index.html">HOME</a>
-                        <a href="classes.html">CLASSES</a>
-                        <a href="instructors.html">INSTRUCTORS</a>
-                        <a href="schedule.html">SCHEDULE</a>
-                        <a href="about.html">ABOUT</a>
+                        <ul>
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="classes.html">CLASSES</a>
+                            </li>
+                            <li>
+                                <a href="instructors.html">INSTRUCTORS</a>
+                            </li>
+                            <li>
+                                <a href="schedule.html">SCHEDULE</a>
+                            </li>
+                            <li>
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                        </ul>
                     </nav>
-                    <!-- <a class="button innerBtn" href="/contact.html">Contact Us</a> -->
-                    <button class="button innerBtn" type="submit" disabled>Contact Us</button>
+                    <button class="navbutton">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button class="button innerBtn navBtn" onclick="document.location='contact-us.html'">Contact Us</button>
                 </div>
             </div>
         </header>
-        <main class="content">
+        <main class="content">    
             <section id="instructors-section" class="spacer body-section">
                 <h2 class="section-title">Our Instructors</h2>
-                <div class="instructors-row">
-                    <div class="brief">
-                        <img class="quota" src="assests/icons/quota-b.png" alt="">
-                        <p>I was trained in the Jivamukti lineage and I have also completed a Yin Yoga teacher training with Bernie Clark.
-                            My classes are focused on finding the balance between effort and grace in the asana.
-                            I want students to feel supported during class and more alive, grounded and focused after class.
-                        </p>
-                        <h6>Penny Arch</h6>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="instructors-row">
+                            <div class="brief">
+                                <img class="quota" src="assests/icons/quota-b.png" alt="">
+                                <p>I was trained in the Jivamukti lineage and I have also completed a Yin Yoga teacher training with Bernie Clark.
+                                    My classes are focused on finding the balance between effort and grace in the asana.
+                                    I want students to feel supported during class and more alive, grounded and focused after class.
+                                </p>
+                                <h6>Penny Arch</h6>
+                            </div>
+                            <div class="instructor-image-box">
+                                <img class="image-instructor" src="assests/images/instructor1-160.png" alt="Instructors Profile Picture">
+                            </div>
+                        </div>
                     </div>
-                    <div class="instructor-image-box">
-                        <img class="image-instructor" src="assests/images/instructor1-160.png" alt="Instructors Profile Picture">
+                    <div class="mySlides fade">
+                        <div class="instructors-row">
+                            <div class="brief">
+                                <img class="quota" src="assests/icons/quota-b.png" alt="">
+                                <p>I draw inspiration from our everyday life, philosophical inquiry/interpretation, 
+                                    re-connection with the body and the ways in which we want and deserve to feel. 
+                                    <br>
+                                    My first training was at Sukha Mukha in Bronte, 10 years ago.
+                                    <br>
+                                    At the time I hadn't given up my stressful management job & embraced yoga fully, 
+                                    so I wanted somewhere I could "fit it in" to my life & study yoga part time. 
+                                    Two weeks into the 5 month course, I quit my job & dove head first into yoga!
+                                </p>
+                                <h6>Penny Arch</h6>
+                            </div>
+                            <div class="instructor-image-box">
+                                <img class="image-instructor" src="assests/images/instructor2-160.png" alt="Instructors Profile Picture">
+                            </div>
+                        </div>        
                     </div>
+                    <div class="mySlides fade">
+                        <div class="instructors-row">
+                            <div class="brief">
+                                <img class="quota" src="assests/icons/quota-b.png" alt="">
+                                <p>Yoga had been calling me for years but it wasn’t until 2008 that I came to the practise regularly 
+                                    in a search to regain strength and flexibility after I poorly managed a knee reconstruction.
+                                    <br> 
+                                    I became absorbed in the practise and was initially unaware of the profound impact yoga was having on me.
+                                    In 2013 it became clear to me that yoga was my path, I decided to become a yoga teacher and undertake my teacher training, 
+                                    with the view to leave my job in dentistry.
+                                </p>
+                                <h6>Vicky Stretch</h6>
+                            </div>
+                            <div class="instructor-image-box">
+                                <img class="image-instructor" src="assests/images/instructor3-160.png" alt="Instructors Profile Picture">
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="instructors-index">
                     <span id="circle index" class="index-dot"></span>
                     <span id="circle index" class="index-dot"></span>
                     <span id="circle index" class="index-dot"></span>
-                    <span id="circle index" class="index-dot"></span>
                 </div>
+                <!-- <script type="text/javascript" src="script.js"></script>     -->
             </section>            
         </main>
         <footer class="footer">

@@ -50,40 +50,73 @@
             </div>
         </header>
         <main class="content">
-            <section id="classes-section" class="spacer body-section">
-                <h2 class="section-title">Our Classes</h2>
-                <div class="classes-col">
-                    <div class="classes-page-container">
-                        <img class="classes-page-images" src="assests/images/class1img-page.jpg" alt="Classes Images">
-                        <h2>Awareness</h2>
-                        <p>A super chilled class. 
-                            <br>
-                            Postures are typically seated or laying down.
-                            <br>
-                            These are slow paced classes that allow space and time to cultivate awareness and reflection.
-                        </p>
+            <section id="instructors-section" class="spacer body-section">
+                <div class="body-row">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.298801824946!2d151.19308231497342!3d-33.88195762717276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae292217df93%3A0x7f041156594ef4ef!2sAIT%20-%20Academy%20of%20Information%20Technology!5e0!3m2!1sen!2sau!4v1601783220927!5m2!1sen!2sau" width="600px" height="600px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        
                     </div>
-                    <div class="classes-page-container">
-                        <img class="classes-page-images" src="assests/images/class2img-page.jpg" alt="Classes Images">
-                        <h2>Empower</h2>
-                        <p>Perfect place for beginners to start their journey 
-                            or to review the foundations of your practice.
-                            <br>
-                            Classes will focus on guiding you through key asana (postures), 
-                            and pranayama (breath techniques).
-                        </p>
-                    </div>
-                    <div class="classes-page-container">
-                        <img class="classes-page-images" src="assests/images/class3img-page.jpg" alt="Classes Images">
-                        <h2>Dynamic</h2>
-                        <p>Flow and strength content designed to challenge 
-                            your current limitations physically and mentally.
-                            Classes tend to focus on building into more challenging asana. 
-                            Building strength and body awareness.
-                        </p>
+                    <div class="contact-box">
+                        <h2>Visit Us</h2>
+                        <ul>
+                            <li>
+                                50 George St,
+                                <br>
+                                Sydney NSW 2000
+                            </li>
+                            <li><i class="far fa-clock"></i>
+                                Mon - Sat:
+                                <br>
+                                7:00am - 08:00pm
+                            </li>
+                        </ul>
+                        <h2>Contact</h2>
+                        <ul>
+                            <li><i class="far fa-envelope"></i>
+                                contact@zen.com.au
+                            </li>
+                            <li><i class="fas fa-phone-volume"></i>
+                                00000000
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="form">
+                    <!-- <form name = "survey" onSubmit="MM_validateForm('name','','R','email','','RisEmail','phone','','R','comment','','R');return document.MM_returnValue"> -->
+                        <label>
+                            <span>NAME</span>
+                        </label>
+                        <input name="name" type="text" id="name">
+                        <br>
+                        <!--                         
+                        <label>
+                            <span>GENDER</span>
+                        </label>
+                        MALE
+                        <input name="gender" type="radio" value="radiobutton">
+                        FEMALE
+                        <input name="gender" type="radio" value="radiobutton" checked>
+                        <br>
+                         -->
+                        <label>E-MAIL</label>
+                        <input name="email" type="text" id="email"><br>
+                        <label>PHONE</label>
+                        <input name="phone" type="text" id="phone"><br>
+                        <label>CITY</label>
+                        <select name="country" id="country">
+                            <option value="SYD" selected>Sydney</option>
+                            <option value="MLB">Melbourn</option>
+                            <option value="CBR">Camberra</option>
+                        </select>
+                        <br>
+                        <label>COMMENT</label>
+                        <textarea name="comment" rows ="6" cols="40" id="comment"></textarea>
+                        <br>
+                        <input type="reset" name="Reset" value="Clear">
+                        <input type="submit" name="Submit" value="Submit">
+                    <!-- </form> -->
+                </div>
+            </section>            
         </main>
         <footer class="footer">
             <div class="container">
