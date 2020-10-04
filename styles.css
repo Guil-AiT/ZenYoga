@@ -836,19 +836,42 @@ footer h2{
 .index-dot{
     display: inline-block;
     border: 2px solid var(--color-light-border);
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
     background-color: var(--color-light);
     border-radius: 50%;
 }
 
-.index-dot:hover{
+/*.index-dot:hover{
     display: inline-block;
     border: 2px solid var(--color-light-border);
     height: 12px;
     width: 12px;
     background-color: var(--main-color);
     border-radius: 50%;
+}*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.active-dot {
+    background-color: var(--main-color);
+    transform: scale(1.2);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /* Media Queries */
@@ -938,4 +961,8 @@ footer h2{
         width: 25vw;
     }
 
+}
+
+.mySlides {
+    display:none
 }
