@@ -874,6 +874,50 @@ footer h2{
     to {opacity: 1}
 }
 
+.about-cover-img{
+    background-image: url(assests/images/instructor1Img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 600px;
+    height: 100vh;
+}
+
+.image-box .image-mats{
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    max-height: 500px;
+}
+
+.about h2{
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0;
+}
+
+.about p{
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-bg-img{
+    background-image: url(assests/logo/logo-shadow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 50%;
+}
+
 /* Media Queries */
 
 .navbutton {
