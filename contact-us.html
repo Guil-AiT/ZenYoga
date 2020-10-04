@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zen Studio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Yoga for everybody!">
+        <meta name="author" content="Guil@AiT">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1m shrink-to-fit=no"> -->
+        <link rel="Zen Tab Icon" href="assests/logo/tab-icon.png">
+        <!-- Stylesheet -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-color">
+                <div id="Menu Container" class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="assests/logo/logo.png" class="logo"></a>
+                    </div>
+                    <nav class="navMenu">
+                        <ul>
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="classes.html">CLASSES</a>
+                            </li>
+                            <li>
+                                <a href="instructors.html">INSTRUCTORS</a>
+                            </li>
+                            <li>
+                                <a href="schedule.html">SCHEDULE</a>
+                            </li>
+                            <li>
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="navbutton">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button class="button innerBtn navBtn" type="submit" disabled>Contact Us</button>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section id="instructors-section" class="spacer body-section">
+                <div class="body-row">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.298801824946!2d151.19308231497342!3d-33.88195762717276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae292217df93%3A0x7f041156594ef4ef!2sAIT%20-%20Academy%20of%20Information%20Technology!5e0!3m2!1sen!2sau!4v1601783220927!5m2!1sen!2sau" width="600px" height="600px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                        
+                    </div>
+                    <div class="contact-box">
+                        <h2>Visit Us</h2>
+                        <ul>
+                            <li>
+                                50 George St,
+                                <br>
+                                Sydney NSW 2000
+                            </li>
+                            <li><i class="far fa-clock"></i>
+                                Mon - Sat:
+                                <br>
+                                7:00am - 08:00pm
+                            </li>
+                        </ul>
+                        <h2>Contact</h2>
+                        <ul>
+                            <li><i class="far fa-envelope"></i>
+                                contact@zen.com.au
+                            </li>
+                            <li><i class="fas fa-phone-volume"></i>
+                                00000000
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="form">
+                    <!-- <form name = "survey" onSubmit="MM_validateForm('name','','R','email','','RisEmail','phone','','R','comment','','R');return document.MM_returnValue"> -->
+                        <label>
+                            <span>NAME</span>
+                        </label>
+                        <input name="name" type="text" id="name">
+                        <br>
+                        <!--                         
+                        <label>
+                            <span>GENDER</span>
+                        </label>
+                        MALE
+                        <input name="gender" type="radio" value="radiobutton">
+                        FEMALE
+                        <input name="gender" type="radio" value="radiobutton" checked>
+                        <br>
+                         -->
+                        <label>E-MAIL</label>
+                        <input name="email" type="text" id="email"><br>
+                        <label>PHONE</label>
+                        <input name="phone" type="text" id="phone"><br>
+                        <label>CITY</label>
+                        <select name="country" id="country">
+                            <option value="SYD" selected>Sydney</option>
+                            <option value="MLB">Melbourn</option>
+                            <option value="CBR">Camberra</option>
+                        </select>
+                        <br>
+                        <label>COMMENT</label>
+                        <textarea name="comment" rows ="6" cols="40" id="comment"></textarea>
+                        <br>
+                        <input type="reset" name="Reset" value="Clear">
+                        <input type="submit" name="Submit" value="Submit">
+                    <!-- </form> -->
+                </div>
+            </section>            
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <form class="newsletter-bar">
+                    <h3>Subscribe to our newsletter</h3>
+                    <input type="text" placeholder="example@mail.com">
+                    <button type="submit" disabled>SUBSCRIBE</button>
+                </form>
+                <div class="row">
+                    <div class="footer-about">
+                        <img src="assests/logo/logo.png" alt="Zen Logo">
+                        <p>Zen Yoga Studio - Yoga experience evolved from traditional practices in a stunning space that resonates with a perfect hum.</p>
+                        <ul>
+                            <li><i class="far fa-envelope"></i>
+                                contact@zen.com.au
+                            </li>
+                            <li><i class="fas fa-phone-volume"></i>
+                                00000000
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-explore">
+                        <h2>Explore</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="instructors.html">Instructors</a></li>
+                            <li><a href="schedule.html">Schedule</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="visit-social-block">
+                        <div class="footer-visit">
+                            <h2>Visit Us</h2>
+                            <ul>
+                            <li>
+                                50 George St,
+                                <br>
+                                Sydney NSW 2000
+                            </li>
+                            <li><i class="far fa-clock"></i>
+                                Mon - Sat:  7:00am - 08:00pm
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="footer-social">
+                            <h2>Social</h2>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        Copyright © 2020 All rights reserved | Guilherme T. Araujo
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
